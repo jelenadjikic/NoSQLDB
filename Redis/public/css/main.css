@@ -1,0 +1,54 @@
+.container {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+    border: 3px solid black;
+    font-family: sans-serif;
+}
+
+.messages {
+    border: 1px solid darkgrey;
+    border-radius: 3px;
+    border-bottom: none;
+    width: 750;
+    height: 300px;
+    color: white;
+    background-color: black;
+    text-align: left;
+}
+
+#message {
+    width: fit-content;
+    color: black;
+    background-color: orange;
+}
+
+h1 {
+    color: tomato;
+}
+
+.currentGame {
+    font-size: x-large;
+}
+
+.chat {
+    display: none;
+}
+
+.msg {
+    width: 100%;
+}
+
+.user {
+    float: left;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.gameScore {
+    font-size: xx-large;
+    color: red;
+    background-color: darkslategray;
+    border-radius: 5px;
+}
