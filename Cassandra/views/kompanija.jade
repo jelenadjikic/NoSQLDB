@@ -1,0 +1,20 @@
+extends layout
+
+block content
+	h2 Podaci o kompaniji: 
+	ul
+		li Ime: #{ime}
+		li Adresa: #{adresa}
+		li Email: #{email}
+		li Telefon: #{telefon}
+		li Opis: #{opis}
+		li Tehnologije: #{tehnologije}
+		li Broj zaposlenih: #{brojzaposlenih}
+		li Prosecna plata (din): #{prosecnaplata}
+	a(class="izmenikompaniju" href="/izmenikompaniju/#{id}") Izmeni podatke o kompaniji
+	ul
+	ul
+	a(class="obrisikompaniju" href="" data-id="#{id}") Obrisi kompaniju
+	ul
+	ul
+	a(href="/") Vrati se na pocetnu stranu

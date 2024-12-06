@@ -1,0 +1,26 @@
+extends layout
+
+block content
+	h2 Dodaj novu kompaniju
+	form(name='dodajkompaniju',method='post',action='/dodajkompaniju')
+		div
+			input#inputIme(type='text', placeholder='Dodaj ime', name='ime')
+		div
+			input#inputAdresa(type='text', placeholder='Dodaj adresu', name='adresa')
+		div
+			input#inputEmail(type='text', placeholder='Dodaj email', name='email')
+		div
+			input#inputTelefon(type='text', placeholder='Dodaj telefon', name='telefon')
+		div
+			input#inputOpis(type='text', placeholder='Dodaj opis', name='opis')
+		div
+			input#inputT(type='text', placeholder='Dodaj tehnologije', name='tehnologije')
+		div
+			input#inputBrZap(type='text', placeholder='Dodaj broj zaposlenih', name='brojZaposlenih')
+		div
+			input#inputPrPlata(type='text', placeholder='Dodaj prosecnu platu', name='prosecnaPlata')
+		div
+			button#btnSubmit(type='submit' class='dugme') Dodaj kompaniju
+		ul
+		ul
+		a(href="/") Vrati se na pocetnu stranu

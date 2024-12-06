@@ -1,0 +1,28 @@
+extends layout
+
+block content
+	h2 Izmeni podatke o kompaniji: 
+	form(name='izmenikompaniju',method='post',action='/izmenikompaniju')
+		div
+			input(type='hidden',name='id',value='#{id}')
+		div
+			input#inputIme(type='text', placeholder='Dodaj ime', name='ime', value='#{ime}' class='polje')
+		div
+			input#inputAdresa(type='text', placeholder='Dodaj adresu', name='adresa', value='#{adresa}' class='polje')
+		div
+			input#inputEmail(type='text', placeholder='Dodaj email', name='email', value='#{email}' class='polje')
+		div
+			input#inputTelefon(type='text', placeholder='Dodaj telefon', name='telefon', value='#{telefon}' class='polje')
+		div
+			input#inputOpis(type='text', placeholder='Dodaj opis', name='opis', value='#{opis}' class='polje')
+		div
+			input#inputT(type='text', placeholder='Dodaj tehnologije', name='tehnologije', value='#{tehnologije}' class='polje')
+		div
+			input#inputBrZap(type='text', placeholder='Dodaj broj zaposlenih', name='brojzaposlenih', value='#{brojzaposlenih}' class='polje')
+		div
+			input#inputPrPlata(type='text', placeholder='Dodaj prosecnu platu', name='prosecnaplata', value='#{prosecnaplata}' class='polje')
+		div
+			button#btnSubmit(type='submit' class='dugme') Izmeni kompaniju
+	ul
+	ul
+	a(href="/kompanija/#{id}") Vrati se nazad

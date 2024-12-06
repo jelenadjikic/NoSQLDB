@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	ul
+	div
+		h2 Filteri:
+		form(name='index',method='post',action='/')
+			div
+				input#inputIme(type='text', placeholder='Dodaj filter po imenu', name='ime')
+			div
+				button#btnSubmit(type='submit' class='dugme') Filtriraj
+		h2 - IT kompanije -
+		.tilesWrap
+		ul
+			each k, i in kompanija
+				div
+					li 
+						a(href="/kompanija/#{k.id}") #{k.ime}
+		a(href='/dodajkompaniju') Dodaj novu kompaniju
+
+
